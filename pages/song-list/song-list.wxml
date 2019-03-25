@@ -1,0 +1,9 @@
+<!--pages/song-list.wxml-->
+<!-- <checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{songList}}">
+    <checkbox value="{{item.id}}" checked="{{item.checked}}" />
+    {{item.name}}
+  </label>
+</checkbox-group> -->
+
+<view wx:for="{{songList}}" bindtap="goLrc">{{item.name}}</view>
