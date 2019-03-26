@@ -9,7 +9,7 @@ function post(url, data){
       if(res.statusCode  === 200){
         Promise.resolve(res.data)
       }else{
-        wx.toast("歌曲接口异常")
+        wx.showToast("歌曲接口异常")
       }
     }
   })

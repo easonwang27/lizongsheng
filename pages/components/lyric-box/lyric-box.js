@@ -39,14 +39,14 @@ Component({
             // if (res.data && res.data.code == 0) {
             //   Promise.resolve(res.data)
             // } else {
-            //   wx.toast("接口异常")
+            //   wx.showToast("接口异常")
             // }
             debugger
             that.setData({
               lyric: res.data
             })
           } else {
-            wx.toast("网络异常")
+            wx.showToast("网络异常")
           }
         }
       })

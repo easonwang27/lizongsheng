@@ -11,11 +11,11 @@ function post(url, data) {
           // if (res.data && res.data.code == 0) {
           //   Promise.resolve(res.data)
           // } else {
-          //   wx.toast("接口异常")
+          //   wx.showToast("接口异常")
           // }
           resolve(res.data)
         } else {
-          wx.toast("网络异常")
+          wx.showToast("网络异常")
         }
       }
     })
@@ -34,11 +34,11 @@ function get(url, data) {
           // if (res.data && res.data.code == 0) {
           //   Promise.resolve(res.data)
           // } else {
-          //   wx.toast("接口异常")
+          //   wx.showToast("接口异常")
           // }
           resolve(res.data)
         } else {
-          wx.toast("网络异常")
+          wx.showToast("网络异常")
         }
       }
     })

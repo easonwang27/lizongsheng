@@ -23,7 +23,7 @@ const getUrlObj = url => {
   let tmpArr = url.split("?");
   let urlObj = {
     url: tmpArr[0],
-    qs: ""
+    qs: {}
   }
   if(tmpArr[1]){
     let qsArr = tmpArr[1].split("&");
