@@ -1,9 +1,13 @@
-<!--pages/song-list.wxml-->
+<!-- pages/song-list.wxml -->
 <!-- <checkbox-group bindchange="checkboxChange">
   <label class="checkbox" wx:for="{{songList}}">
     <checkbox value="{{item.id}}" checked="{{item.checked}}" />
     {{item.name}}
   </label>
 </checkbox-group> -->
-
-<view wx:for="{{songList}}" bindtap="goLrc">{{item.name}}</view>
+<view wx:for="{{songList}}" wx:if="{{!lyricFlag}}" wx:key="{{item.id}}">
+  <text data-lyric="{{item.lrc}}" bindtap="goLrc">{{item.name}}</text>
+</view>
+<view wx:if="{{lyricFlag}}">
+  <lyric-box lyricUrl="{{lyric}}"></lyric-box>
+</view>

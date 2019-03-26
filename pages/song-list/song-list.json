@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "lyric-box": "/pages/components/lyric-box/lyric-box"
+  }
 }

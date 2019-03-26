@@ -6,7 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    songList: []
+    songList: [],
+    lyricFlag: false,
+    lyric: "",
   },
 
   checkboxChange(e) {
@@ -23,7 +25,7 @@ Page({
       type: "song",
     }
     songListApi(params, (res) => {
-      debugger
+      // debugger
       if(res && res.code === 200){
         this.setData({
           songList: res.data
@@ -34,22 +36,10 @@ Page({
     })
   },
   goLrc(event) {
-    let params = {
-      key: 579621905,
-      s: "李宗盛",
-      limit: 100,
-      offset: 0,
-      type: "lrc",
-    }
-    songListApi(params, (res) => {
-      debugger
-      if(res && res.code === 200){
-        this.setData({
-          songList: res.data
-        })  
-      }
-    }, (res) => {
-      debugger
+    debugger
+    this.setData({
+      lyric: event.target.dataset.lyric,
+      lyricFlag: true
     })
   },
 

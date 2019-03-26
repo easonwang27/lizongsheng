@@ -14,6 +14,28 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+// zlz
+const getUrlObj = url => {
+  if(!url){
+    console.log("url不能为空")
+    return
+  }
+  let tmpArr = url.split("?");
+  let urlObj = {
+    url: tmpArr[0],
+    qs: ""
+  }
+  if(tmpArr[1]){
+    let qsArr = tmpArr[1].split("&");
+    qsArr.forEach(item => {
+      let oneQsArr = item.split("=")
+      urlObj.qs[oneQsArr[0]] = oneQsArr[1]
+    })
+  }
+  return urlObj
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  getUrlObj,
 }

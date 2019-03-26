@@ -1,0 +1,2 @@
+<!--pages/components/lyric.wxml-->
+<text>{{lyric}}</text>
