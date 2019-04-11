@@ -1,9 +1,7 @@
 // pages/lyric/lyric.js
-
+const { getUrlObj } = require("../../utils/util.js")
 // 内部数据
-let _data = {
-  lyricUrl: ""
-}
+let _data = {}
 Page({
   /**
    * 页面的初始数据
@@ -13,18 +11,24 @@ Page({
   },
   _getLyric(){
     let that = this
-    wx.request({
-      url: _data.lyricUrl,
-      success(res) {
-        // 网络正常返回
-        if (res.statusCode === 200) {
-          that.setData({
-            lyric: res.data
-          })
-        } else {
-          wx.showToast("网络异常")
+    let urlObj = _data.lyricObj
+    debugger
+    new Promise(function(resolve){
+      wx.request({
+        url: urlObj.url,
+        data: urlObj.qs,
+        success(res) {
+          // 网络正常返回
+          if (res.statusCode === 200) {
+            resolve()
+            that.setData({
+              lyric: res.data
+            })
+          } else {
+            wx.showToast("网络异常")
+          }
         }
-      }
+      })
     })
   },
 
@@ -32,18 +36,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    debugger
-    _data.lyricUrl = options.lyric
+    _data.lyricObj = getUrlObj(options.lyric)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  async onReady: function () {
-    await this._getLyric();
-    wx.setNavigationBarTitle({
-      title: '歌词页面'
-    })
+  onReady: function () {
+    this._getLyric().then(() => {
+      wx.setNavigationBarTitle({
+        title: '歌词页面'
+      })
+
+    });
   },
 
   /**

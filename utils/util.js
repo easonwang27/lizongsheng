@@ -20,7 +20,7 @@ const getUrlObj = url => {
     console.log("url不能为空")
     return
   }
-  let tmpArr = url.split("?");
+  let tmpArr = decodeURIComponent(url).split("?");
   let urlObj = {
     url: tmpArr[0],
     qs: {}

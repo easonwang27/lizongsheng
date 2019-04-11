@@ -7,7 +7,6 @@ Page({
    */
   data: {
     songList: [],
-    lyricFlag: false,
     lyric: "",
   },
 
@@ -37,9 +36,9 @@ Page({
   },
   goLrc(event) {
     debugger
-    this.setData({
-      lyric: event.target.dataset.lyric,
-      lyricFlag: true
+    let lyric = encodeURIComponent(event.target.dataset.lyric)
+    wx.navigateTo({
+      url: `/pages/lyric/lyric?lyric=${lyric}`
     })
   },
 
