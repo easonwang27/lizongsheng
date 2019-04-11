@@ -90,6 +90,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
-  }
+    // 弹窗页直接分享的友好方式
+    return {
+      title: "年少不听李宗盛，听懂已到不惑年",
+      path: "/pages/song-list/song-list",
+      imageUrl: "/static/image/lizongsheng.jpg"
+    }
+  },
 })
