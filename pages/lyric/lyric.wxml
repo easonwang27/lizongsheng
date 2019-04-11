@@ -1,2 +1,5 @@
 <!--pages/lyric/lyric.wxml-->
-<text>{{lyric}}</text>
+<view>
+    <text>{{lyric}}</text>
+    <share></share>
+</view>

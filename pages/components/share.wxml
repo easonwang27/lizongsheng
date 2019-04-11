@@ -1,0 +1,2 @@
+<!-- pages/components/share.wxml -->
+<button class="share-img" open-type="share"></button>

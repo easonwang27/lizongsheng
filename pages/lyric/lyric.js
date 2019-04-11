@@ -13,7 +13,7 @@ Page({
     let that = this
     let urlObj = _data.lyricObj
     debugger
-    new Promise(function(resolve){
+    return new Promise(function(resolve){
       wx.request({
         url: urlObj.url,
         data: urlObj.qs,
