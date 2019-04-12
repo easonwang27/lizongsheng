@@ -6,14 +6,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-    songList: [],
-    lyric: "",
-    
+    activeTab: "songTab",
+
+    likeSongList: [{
+      name: "山丘",
+    },{
+      name: "问",
+    },{
+      name: "新写的旧歌",
+    }],
+
+    myStoryList: [{
+      name: "晚婚",
+      list: [{
+        content: "思想和经济独立带来的落差，'我从来不想独身，却有预感晚婚'，我喜欢的人在哪里"
+      }]
+    },{
+      name: "问",
+      list: [{
+        content: "keep real, 真实有力，‘如果女人 总是等到夜深 默默付出青春’"
+      }]
+    },{
+      name: "新写的旧歌",
+      list: [{
+        content: "任何一句都是主题的一个切面，任何一句都能共情，任何一句拿出来都会口水，主观表达的魅力。'两个男人 极有可能终其一生只是长得像而已'"
+      }]
+    }],
   },
 
-  checkboxChange(e) {
-    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
-  },
 
   // 业务api
   songList() {

@@ -4,3 +4,16 @@
 }
 
 
+
+.song-story{
+    padding: 20rpx;
+}
+.one-song{
+    padding: 20rpx 0;
+}
+.one-story{
+    padding: 10rpx 0;
+    text-indent: 2rem;
+}
+
+

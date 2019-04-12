@@ -1,9 +1,13 @@
-<!--pages/song-story.wxml-->
-<view>
-  <view wx:for="{{songStoryList}}" wx:key="{{item.name}}" class="song-story" >
-    <view wx:for="{{item.list}}" wx:key="{{row.id}}" wx:for-item="row" class="" hover-class="hover-active">
-        <text data-lyric="{{item.list}}" bindtap="addStory">{{row.content}}</text>
+<!-- pages/song-story.wxml -->
+<view class="song-story">
+    <view wx:for="{{songStoryList}}" wx:key="{{item.name}}" class="one-song">
+        {{item.name}}
+        <view wx:for="{{item.list}}" wx:key="{{row.id}}" wx:for-item="row" class="one-story" hover-class="hover-active">
+            <view></view>
+            <view data-lyric="{{item.list}}" bindtap="addStory">
+                {{row.author}}: {{row.content}}
+            </view>
+        </view>
     </view>
-  </view>
-  <share></share>
+    <share></share>
 </view>

@@ -1,7 +1,15 @@
 <!-- pages/song-list.wxml -->
 <view>
-  <view wx:for="{{songList}}" wx:key="{{item.id}}" class="song-list" hover-class="hover-active">
-    <text data-lyric="{{item.lrc}}" bindtap="goLrc">{{item.name}}</text>
+  <view class="{{activeTab === 'sonTab'? 'active-tab': ''}}">歌曲</view>
+  <view class="{{activeTab === 'storyTab'? 'active-tab': ''}}">评论</view>
+  <view wx:if="{{activeTab === 'songTab'}}" wx:for="{{likeSongList}}" wx:key="{{item.name}}" class="song-list" hover-class="hover-active">
+    <text>{{item.name}}</text>
+  </view>
+  <view  wx:if="{{activeTab === 'storyTab'}}"  wx:for="{{myStoryList}}" wx:key="{{item.name}}" class="one-song">
+    <view wx:for="{{item.list}}" wx:key="{{row.id}}" wx:for-item="row" class="one-story" hover-class="hover-active">
+      <view>{{item.name}}</view>
+      <view bindtap="addStory">{{row.content}}</view>
+    </view>
   </view>
   <share></share>
 </view>
