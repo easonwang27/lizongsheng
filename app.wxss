@@ -8,3 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+
+/* 点击样式 */
+.hover-active{
+  background-color: #ccc;
+}

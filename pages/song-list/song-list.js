@@ -8,6 +8,7 @@ Page({
   data: {
     songList: [],
     lyric: "",
+    
   },
 
   checkboxChange(e) {

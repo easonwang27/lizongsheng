@@ -1,14 +1,40 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/song-list/song-list",
-    "pages/test-player/test-player"
+    "pages/song-story/song-story",
+    "pages/mine/mine",
+    "pages/lyric/lyric"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "lizs",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#969696",
+    "selectedColor": "#ff4891",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/song-list/song-list",
+        "text": "首页",
+        "iconPath": "static/image/tab-bar-home.png",
+        "selectedIconPath": "static/image/tab-bar-home-active.png"
+      },
+      {
+        "pagePath": "pages/song-story/song-story",
+        "text": "故事",
+        "iconPath": "static/image/tab-bar-story.png",
+        "selectedIconPath": "static/image/tab-bar-story-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/image/tab-bar-mine.png",
+        "selectedIconPath": "static/image/tab-bar-mine-active.png"
+      }
+    ]
   }
 }
