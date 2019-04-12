@@ -1,0 +1,7 @@
+<!-- pages/song-list.wxml -->
+<view>
+  <view wx:for="{{songList}}" wx:key="{{item.id}}" class="song-list" hover-class="hover-active">
+    <text data-lyric="{{item.lrc}}" bindtap="goLrc">{{item.name}}</text>
+  </view>
+  <share></share>
+</view>
