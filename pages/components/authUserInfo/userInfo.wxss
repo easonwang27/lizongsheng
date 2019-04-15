@@ -1,0 +1,15 @@
+/* pages/components/authUserInfo/userInfo.wxss */
+.auth-user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.auth-text{
+    color: #cccccc;
+    font-size: 2rpx;
+}
+.auth-btn{
+    width: 98%;
+    margin-top: 20rpx;
+}

@@ -1,0 +1,8 @@
+<!-- pages/components/authUserInfo/userInfo.wxml -->
+<view class="auth-user-info">
+    <image mode="center" style="height: 180px;" src="/static/image/lizongsheng.jpg"></image>
+    <text>请完成微信授权以继续使用</text>
+    <button type="primary" class="auth-btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+        获取用户信息
+    </button>
+</view>
