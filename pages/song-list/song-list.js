@@ -1,4 +1,5 @@
 // pages/song-list.js
+const {wx_authSetting} = require("../../service/auth.js")
 const { songListApi } = require("../../service/api/song-list-api.js")
 Page({
 
@@ -8,7 +9,7 @@ Page({
   data: {
     songList: [],
     lyric: "",
-    
+
   },
 
   checkboxChange(e) {
@@ -47,7 +48,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.songList()
+    wx_authSetting('scope.userLocation').then(() => {
+    // wx_authSetting('scope.userInfo').then(() => {
+      this.songList()
+    })
   },
 
   /**

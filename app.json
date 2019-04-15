@@ -36,5 +36,10 @@
         "selectedIconPath": "static/image/tab-bar-mine-active.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的位置，为你提供更好的使用体验"
+    }
   }
 }
