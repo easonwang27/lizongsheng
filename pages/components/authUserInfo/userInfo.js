@@ -1,4 +1,7 @@
 // pages/components/authUserInfo/userInfo.js
+//获取应用实例
+const app = getApp()
+
 Component({
   /**
    * 组件的属性列表
@@ -18,6 +21,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onGotUserInfo(e) {
+      console.log(e.detail.errMsg)
+      console.log(e.detail.userInfo)
+      console.log(e.detail.rawData)
+      getApp().globalData.userInfo = e.detail.userInfo
+    }
   }
 })

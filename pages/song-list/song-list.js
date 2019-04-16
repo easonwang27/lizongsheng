@@ -1,6 +1,8 @@
 // pages/song-list.js
-const {wx_authSetting} = require("../../service/auth.js")
+const { wx_authSetting } = require("../../service/auth.js")
 const { songListApi } = require("../../service/api/song-list-api.js")
+
+const soter = require("../../service/soter.js")
 Page({
 
   /**
@@ -10,6 +12,11 @@ Page({
     songList: [],
     lyric: "",
 
+  },
+
+  // 不参与渲染的数据
+  _data: {
+    
   },
 
   checkboxChange(e) {
@@ -27,17 +34,16 @@ Page({
     }
     songListApi(params, (res) => {
       // debugger
-      if(res && res.code === 200){
+      if (res && res.code === 200) {
         this.setData({
           songList: res.data
-        })  
+        })
       }
     }, (res) => {
       debugger
     })
   },
   goLrc(event) {
-    debugger
     let lyric = encodeURIComponent(event.target.dataset.lyric)
     wx.navigateTo({
       url: `/pages/lyric/lyric?lyric=${lyric}`
@@ -49,7 +55,7 @@ Page({
    */
   onLoad: function (options) {
     wx_authSetting('scope.userLocation').then(() => {
-    // wx_authSetting('scope.userInfo').then(() => {
+      // wx_authSetting('scope.userInfo').then(() => {
       this.songList()
     })
   },
