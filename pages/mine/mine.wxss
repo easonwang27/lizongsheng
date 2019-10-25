@@ -1,7 +1,17 @@
 /* pages/song-list.wxss */
+.tab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: 
+}
+
+
+
 .song-list{
     padding-left: 20rpx;
 }
+
 
 
 

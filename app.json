@@ -41,5 +41,6 @@
     "scope.userLocation": {
       "desc": "获取您的位置，为你提供更好的使用体验"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

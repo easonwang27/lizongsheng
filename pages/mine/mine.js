@@ -63,6 +63,21 @@ Page({
     })
   },
 
+  switchOne(event){
+    debugger
+    if(event.currentTarget.dataset.type == "song"){
+      this.setData({
+        activeTab: "songTab"
+      })
+    }else{
+      this.setData({
+        activeTab: "storyTab"
+      })
+    }
+  },
+
+ 
+
   /**
    * 生命周期函数--监听页面加载
    */
