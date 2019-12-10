@@ -1,0 +1,33 @@
+<view class="cinema-address">
+  <text>奥兰环球影城（望京店）</text>
+  <text>朝阳区来广营</text>
+</view>
+<swiper class="poster-container" bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" circular autoplay>
+  <block wx:for="{{poster}}" wx:key="{{index}}">
+    <swiper-item class="item">
+      <image class="itemImg {{currentIndex == index ? 'active': ''}}" src="{{item.img}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view>
+    <view wx:for="{{dates}}" wx:key="index">{{item.alias}}{{item.date}}</view>
+    <block wx:for="{{poster}}" wx:key="index">
+        <view class="schedule-container" wx:for="{{item.schedule}}" wx:key="index">
+            <view>
+                <text>{{item.beginTime}}</text>
+                <text>{{item.endTime}}</text>
+            </view>
+            <view>
+                <text>{{item.type}}</text>
+                <text>{{item.room}}</text>
+            </view>
+            <view>
+                <text>￥{{item.price/100}}</text>
+                <text></text>
+            </view>
+            <view>
+                <text>购票</text>
+            </view>
+        </view>
+    </block>
+</view>

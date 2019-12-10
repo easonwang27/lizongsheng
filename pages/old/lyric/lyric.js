@@ -1,5 +1,5 @@
 // pages/lyric/lyric.js
-const { getUrlObj } = require("../../utils/util.js")
+const { getUrlObj } = require("../../../utils/util.js")
 // 内部数据
 let _data = {}
 Page({
