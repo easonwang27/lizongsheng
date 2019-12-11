@@ -39,12 +39,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
-					"name": "song-list",
-					"pathName": "pages/song-list/song-list",
+					"name": "pages/moive/choice-seat/choice-seat",
+					"pathName": "pages/moive/choice-seat/choice-seat",
 					"query": "",
 					"scene": null
 				},

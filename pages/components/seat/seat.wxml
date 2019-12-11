@@ -1,0 +1,2 @@
+<!-- 座位图 -->
+<canvas style="width: 300px; height: 200px;" canvas-id="seatCanvas"></canvas>

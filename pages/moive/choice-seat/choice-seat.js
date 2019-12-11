@@ -5,14 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
+    cinemaName:"",
+    name: "",
+    endTime:"",
+    type:"",
+    price: "",
+    room: "",
+    // [row,col,isSelected]
+    // 第一排第一列已被选
+    // [0,0,0]
+    seats: [
+            [0,0,0],[0,1,0],[0,2,0],[0,3,0],[0,4,0],
+            [1,0,0],[1,1,0],[1,2,0],[1,3,0],[1,4,0],
+            [2,0,0],[2,1,0],[2,2,1],[2,3,1],[2,4,0],
+            [3,0,0],[3,1,0],[3,2,0],[3,3,0],[3,4,0],
+            [4,0,0],[4,1,0],[4,2,0],[4,3,0],[4,4,0],
+           ],
+           selectTicket: [],
+  },
+  choiceSeat(event){
+    let dataset = event.target.dataset
+    let index = dataset.index
+    let val = dataset.val
+    // 不可选
+    if(val === 1){
+      return
+    }
+    let key = 'seats.['+index+'][2]'
+    this.setData({
+      [key]: val === 0 ? 2 : 0
+    })
+    let seats = this.data.seats
+    let selectTicket = []
+    seats.forEach(item => {
+      // debugger
 
+      if(item[2] === 2){
+        selectTicket.push(item)
+      }
+    })
+
+    this.setData({
+      selectTicket
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData(options)
   },
 
   /**

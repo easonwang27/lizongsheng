@@ -1,16 +1,52 @@
 /**app.wxss**/
-.container {
-  height: 100%;
+.main-color{
+  color: #ff4891;
+}
+.sub-color{
+  color: #999999;
+}
+.main-bg-color{
+  background-color: #ff4891;
+}
+.main-btn{
+  color: #ffffff;
+  background-color: #ff4891;
+  padding: 6rpx 10rpx;
+  border-radius: 6rpx;
+}
+.t-c{
+  text-align: center;
+}
+.h-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.v-flex{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 20rpx 40rpx;
-  box-sizing: border-box;
-} 
-
+}
+.v-flex-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.col-2{
+  flex-grow: 1;
+}
+.font-14{
+  font-size: 14px;
+}
 
 /* 点击效果样式 */
 .hover-active{
   background-color: #ccc;
+}
+.close-icon{
+  transform: rotate(45deg);
+
 }

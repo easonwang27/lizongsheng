@@ -1,2 +1,34 @@
-<!--pages/moive/choice-seat/choice-seat.wxml-->
-<text>pages/moive/choice-seat/choice-seat.wxml</text>
+<!-- <seat></seat> -->
+<view class="seat-container">
+    <view wx:for="{{seats}}" wx:key="index" bindtap="choiceSeat">
+        <image class="seat" data-index="{{index}}" data-val="{{item[2]}}" src="{{item[2] === 0? '../../../static/image/seat.png' : item[2] === 1? '../../../static/image/seat-no.png' : '../../../static/image/seat-yes.png'}}"></image>
+    </view>
+</view>
+<view class="seat-ins">
+    <view class="seat-ins-item">
+        <text>可选</text>
+        <image class="seat" src="../../../static/image/seat.png"></image>
+    </view>
+    <view class="seat-ins-item">
+        <text>不可选</text>
+        <image class="seat" src="../../../static/image/seat-no.png"></image>
+    </view>
+    <view class="seat-ins-item">
+        <text>已选</text>
+        <image class="seat" src="../../../static/image/seat-yes.png"></image>
+    </view>
+</view>
+<view class="order-container">
+    <view>已选座位</view>
+    <view class="order-ticket" wx:for="{{selectTicket}}" wx:key="index">
+        <view class="ticket">
+            <text>{{item[0]+1}}排{{item[1]+1}}座</text>
+            <text class="main-color">￥{{price/100}}</text>
+        </view>
+        <view class="close-icon">+</view>
+    </view>
+    <view wx:if="{{selectTicket.length}}" class="main-btn">
+        ￥{{price*(selectTicket.length)/100}}确认选座
+    </view>
+    <view wx:else class="main-btn">请先选座</view>
+</view>

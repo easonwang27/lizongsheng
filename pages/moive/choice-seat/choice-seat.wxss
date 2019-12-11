@@ -1,1 +1,37 @@
 /* pages/moive/choice-seat/choice-seat.wxss */
+.seat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.seat {
+  width: 70rpx;
+  height: 50rpx;
+  margin: 4rpx;
+}
+.seat-ins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seat-ins-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-container{
+    padding: 20rpx;
+}
+.order-ticket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
