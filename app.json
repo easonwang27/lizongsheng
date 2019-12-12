@@ -2,7 +2,7 @@
   "pages": [
     "pages/moive/moive-list/moive-list",
     "pages/moive/choice-seat/choice-seat",
-    "pages/moive/order-detail/order-detail",
+    "pages/moive/order-confirm/order-confirm",
     "pages/moive/pay-success/pay-success"
   ],
   "window": {

@@ -20,15 +20,17 @@
 </view>
 <view class="order-container">
     <view>已选座位</view>
-    <view class="order-ticket" wx:for="{{selectTicket}}" wx:key="index">
-        <view class="ticket">
-            <text>{{item[0]+1}}排{{item[1]+1}}座</text>
-            <text class="main-color">￥{{price/100}}</text>
+    <view class="ticket-box h-flex">
+        <view class="order-ticket" wx:for="{{selectTicket}}" wx:key="index">
+            <view class="ticket font-14 sub-color">
+                <text>{{item[0]+1}}排{{item[1]+1}}座</text>
+                <text class="main-color">￥{{price/100}}</text>
+            </view>
+            <view class="close-icon">+</view>
         </view>
-        <view class="close-icon">+</view>
     </view>
-    <view wx:if="{{selectTicket.length}}" class="main-btn">
+    <view wx:if="{{selectTicket.length}}" class="main-btn t-c padding-big" bindtap="goOrderConfirm">
         ￥{{price*(selectTicket.length)/100}}确认选座
     </view>
-    <view wx:else class="main-btn">请先选座</view>
+    <view wx:else class="main-btn t-c padding-big disabled-bg-color">请先选座</view>
 </view>

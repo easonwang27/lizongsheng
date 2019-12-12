@@ -24,14 +24,33 @@
 .order-container{
     padding: 20rpx;
 }
+
+.ticket-box{
+    flex-wrap: wrap;
+    margin: 20rpx;
+}
 .order-ticket{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6rpx;
+    width: 200rpx;
+    height: 120rpx;
+    background: url(https://static-as.missfresh.cn/frontend/cdn-images/wklVHvx7AV1Ou5_E2MDirIeZ.png) no-repeat;
+    /* background-size: cover; */
+    /* background-color: #0f0; */
 }
 .ticket{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.padding-big{
+    padding: 20rpx;
+}
+
+.disabled-bg-color{
+    background-color: #cccccc;
 }

@@ -40,7 +40,7 @@
                 <text></text>
             </view>
             <view class="v-flex">
-                <text class="main-btn font-14" data-index="{{postIndex}}" data-item="{{item}}" bindtap="buy">购票</text>
+                <text class="main-btn font-14" data-index="{{postIndex}}" data-item="{{item}}" bindtap="goChoiceSeats">购票</text>
             </view>
         </view>
     </block>

@@ -12,7 +12,8 @@
   color: #ffffff;
   background-color: #ff4891;
   padding: 6rpx 10rpx;
-  border-radius: 6rpx;
+  border-radius: 10rpx;
+  text-align: center;
 }
 .t-c{
   text-align: center;
@@ -41,7 +42,9 @@
 .font-14{
   font-size: 14px;
 }
-
+.padding-big{
+  padding: 30rpx;
+}
 /* 点击效果样式 */
 .hover-active{
   background-color: #ccc;

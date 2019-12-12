@@ -104,7 +104,7 @@ Page({
     }
     return res || ''
   },
-  buy(event) {
+  goChoiceSeats(event) {
     let dataset = event.target.dataset
     let index = dataset.index
     let item = dataset.item

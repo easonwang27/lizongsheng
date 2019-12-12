@@ -1,0 +1,49 @@
+<view class="order padding-30">
+    <view class="img"></view>
+    <view class="ticket">
+        <view class="title">
+            <text class="title-name">功夫熊猫</text>
+            <text class="num">4张 原价￥167.5</text>
+        </view>
+        <text class="padding-b-10">今天 12月12日 19:40 原版3D</text>
+        <text class="padding-b-10">奥兰环球影城（望京店）</text>
+        <text class="padding-b-10">5号厅(60帧激光厅) 7排04座 | 7排04座</text>
+    </view>
+</view>
+<view class="middle-content padding-30">
+    <view class="row h-flex">
+        <text>活动抵用券</text>
+        <text class="main-color font-14">-￥2.2</text>
+    </view>
+    <view class="row h-flex">
+        <text>观影卡</text>
+        <text>去使用</text>
+    </view>
+    <view class="h-flex row-r"> 
+        票价小计 <text class="main-color">￥165.3</text>
+    </view>
+</view>
+    <view class="food-container padding-30">
+        <view class="row h-flex">
+            <text>观影小吃</text>
+            <text>电影和可乐爆米花更配哦</text>
+        </view>
+        <view class="food h-flex">
+            <view class="food-img"></view>
+            <view class="food-content v-flex">
+                <text>爆米花（中）+乐事薯片（大）+可乐（中）</text>
+                <view class="h-flex">
+                    <text class="main-color">￥20.9</text>
+                    <text class="add-ico"></text>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+<view class="pay-bar padding-30">
+    <text class="main-color">￥167.5</text>
+    <view class="main-btn main-btn-big" bindtap="goPay">
+        确认支付
+    </view>
+</view>

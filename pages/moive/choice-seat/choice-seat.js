@@ -5,12 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    cinemaName:"",
-    name: "",
-    endTime:"",
-    type:"",
-    price: "",
-    room: "",
+    // cinemaName:"",
+    // name: "",
+    // endTime:"",
+    // type:"",
+    // price: "",
+    // room: "",
+    cinemaName:"奥兰环球影城（望京店）",
+    name: "功夫熊猫",
+    endTime:"17:40",
+    type:"原版3D",
+    price: "4080",
+    room: "5号厅(60帧激光厅)",
     // [row,col,isSelected]
     // 第一排第一列已被选
     // [0,0,0]
@@ -49,12 +55,18 @@ Page({
       selectTicket
     })
   },
-
+  goOrderConfirm(){
+    let params = this._genQs(paramsObj)
+    let url = "/pages/moive/order-confirm/order-confirm" + params
+    wx.navigateTo({
+      url
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData(options)
+    // this.setData(options)
   },
 
   /**
