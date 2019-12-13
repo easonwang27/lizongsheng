@@ -19,31 +19,28 @@
         <text>观影卡</text>
         <text>去使用</text>
     </view>
-    <view class="h-flex row-r"> 
-        票价小计 <text class="main-color">￥165.3</text>
+    <view class="h-flex row-r">
+        票价小计
+        <text class="main-color">￥165.3</text>
     </view>
 </view>
-    <view class="food-container padding-30">
-        <view class="row h-flex">
-            <text>观影小吃</text>
-            <text>电影和可乐爆米花更配哦</text>
-        </view>
-        <view class="food h-flex">
-            <view class="food-img"></view>
-            <view class="food-content v-flex">
-                <text>爆米花（中）+乐事薯片（大）+可乐（中）</text>
-                <view class="h-flex">
-                    <text class="main-color">￥20.9</text>
-                    <text class="add-ico"></text>
-                </view>
+<view class="food-container padding-30">
+    <view class="row h-flex row-tiitle">
+        <text>观影小吃</text>
+        <text class="font-12 sub-color">电影和可乐爆米花更配哦</text>
+    </view>
+    <view wx:for="{{[1,2,3]}}" class="food h-flex">
+        <view class="food-img"></view>
+        <view class="food-content v-flex">
+            <text>爆米花（中）+乐事薯片（大）+可乐（中）</text>
+            <view class="h-flex row">
+                <view class="main-color">￥20.9</view>
+                <view class="main-color">+</view>
             </view>
         </view>
-
     </view>
-
+</view>
 <view class="pay-bar padding-30">
     <text class="main-color">￥167.5</text>
-    <view class="main-btn main-btn-big" bindtap="goPay">
-        确认支付
-    </view>
+    <view class="main-btn main-btn-big" bindtap="goPay">确认支付</view>
 </view>

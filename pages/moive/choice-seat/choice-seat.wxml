@@ -1,5 +1,15 @@
 <!-- <seat></seat> -->
+<view class="moive-container">
+    <view class="movie-title">功夫熊猫</view>
+    <view class="date sub-color">今天 12月12日 19:40 原版3D</view>
+    <view class="tip sub-color font-12">您购买的影城为奥兰环球影城（望京店）</view>
+</view>
 <view class="seat-container">
+    <view class="h-flex screen">
+        <view class="left-triangle"></view>
+        <view class="middle-rect">5号厅(60帧激光厅)银幕</view>
+        <view class="right-triangle"></view>
+    </view>
     <view wx:for="{{seats}}" wx:key="index" bindtap="choiceSeat">
         <image class="seat" data-index="{{index}}" data-val="{{item[2]}}" src="{{item[2] === 0? '../../../static/image/seat.png' : item[2] === 1? '../../../static/image/seat-no.png' : '../../../static/image/seat-yes.png'}}"></image>
     </view>
@@ -19,10 +29,10 @@
     </view>
 </view>
 <view class="order-container">
-    <view>已选座位</view>
+    <view wx:if="{{selectTicket.length}}">已选座位</view>
     <view class="ticket-box h-flex">
         <view class="order-ticket" wx:for="{{selectTicket}}" wx:key="index">
-            <view class="ticket font-14 sub-color">
+            <view class="ticket font-12 sub-color">
                 <text>{{item[0]+1}}排{{item[1]+1}}座</text>
                 <text class="main-color">￥{{price/100}}</text>
             </view>

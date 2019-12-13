@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "奥兰环球影城（望京店）",
   "usingComponents": {
     "seat": "../../components/seat/seat"
   }

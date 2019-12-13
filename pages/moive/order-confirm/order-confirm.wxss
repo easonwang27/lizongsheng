@@ -1,6 +1,8 @@
 /* pages/moive/order-detail/order-detail.wxss */
 page{
     background-color: #cccccc;
+    color: #4d4d4d;
+
 }
 .padding-30{
     padding: 30rpx;
@@ -45,6 +47,7 @@ page{
     background-color: #ffffff;
 }
 .row{
+    width: 100%;
     justify-content: space-between;
     height: 70rpx;
     color: #4d4d4d;
@@ -57,7 +60,12 @@ page{
 
 .food-container{
     margin-top: 30rpx;
+    margin-bottom: 176rpx;
     background-color: #ffffff;
+}
+.row-title{
+    color: #000000;
+    border-top: 1rpx solid #f8f8f8;
 }
 .food-img{
     width: 300rpx;
@@ -65,7 +73,7 @@ page{
     background-size: contain;
 }
 .food-content{
-    
+    font-size: 14px;
 }
 
 

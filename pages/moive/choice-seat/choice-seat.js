@@ -56,8 +56,8 @@ Page({
     })
   },
   goOrderConfirm(){
-    let params = this._genQs(paramsObj)
-    let url = "/pages/moive/order-confirm/order-confirm" + params
+    // let params = this._genQs(paramsObj)
+    let url = "/pages/moive/order-confirm/order-confirm"
     wx.navigateTo({
       url
     })
