@@ -63,6 +63,7 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10rpx;
 }
 
 .order-container {

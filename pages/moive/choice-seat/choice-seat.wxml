@@ -31,7 +31,7 @@
 <view class="order-container">
     <view wx:if="{{selectTicket.length}}">已选座位</view>
     <view class="ticket-box h-flex">
-        <view class="order-ticket" wx:for="{{selectTicket}}" wx:key="index">
+        <view class="order-ticket" wx:for="{{selectTicket}}" wx:key="index" data-index="{{index}}" bindtap="delOne">
             <view class="ticket font-12 sub-color">
                 <text>{{item[0]+1}}排{{item[1]+1}}座</text>
                 <text class="main-color">￥{{price/100}}</text>
