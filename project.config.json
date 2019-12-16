@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
@@ -56,9 +56,16 @@
 					"scene": null
 				},
 				{
+					"id": 2,
+					"name": "pages/moive/my-moive/my-movie",
+					"pathName": "pages/moive/my-moive/my-movie",
+					"query": "",
+					"scene": null
+				},
+				{
 					"id": -1,
-					"name": "mine",
-					"pathName": "pages/mine/mine",
+					"name": "pages/moive/moive-detail/moive-detail",
+					"pathName": "pages/moive/moive-detail/moive-detail",
 					"query": "",
 					"scene": null
 				}

@@ -1,0 +1,9 @@
+<!--pages/moive/moive-detail/moive-detail.wxml-->
+<view class="detail-container sub-color font-12">
+    <view class="moive-loc">奥兰环球影城（望京店）</view>
+    <view class="v-flex detail-content">
+        <text class="moive-name">功夫熊猫</text>
+        <text class="main-color">12月12日 19:40 原版3D</text>
+        <text >3号厅 5排2座</text>
+    </view>
+</view>

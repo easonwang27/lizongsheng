@@ -3,7 +3,9 @@
     "pages/moive/moive-list/moive-list",
     "pages/moive/choice-seat/choice-seat",
     "pages/moive/order-confirm/order-confirm",
-    "pages/moive/pay-success/pay-success"
+    "pages/moive/pay-success/pay-success",
+    "pages/moive/my-moive/my-movie",
+    "pages/moive/moive-detail/moive-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

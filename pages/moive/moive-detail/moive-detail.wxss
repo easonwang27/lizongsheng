@@ -1,0 +1,26 @@
+/* pages/moive/moive-detail/moive-detail.wxss */
+page{
+    background-color: #f0f0f0;
+}
+.detail-container{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    padding: 20rpx 30rpx;
+    margin: 20rpx 30rpx;
+}
+.moive-loc{
+    color: #000000;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.detail-content{
+    align-items: flex-start;
+}
+.moive-name{
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10rpx;
+    margin-bottom: 8rpx;
+}
