@@ -10,7 +10,16 @@
   font-weight: 700;
 }
 
+.date-tap{
 
+}
+.tap-item{
+  margin-right: 10rpx;
+  border-bottom: 8rpx solid transparent;
+}
+.active-tab{
+  border-bottom: 8rpx solid #ff4891;
+}
 
 
 .poster-container {
@@ -50,6 +59,7 @@
 .schedule-container{
   display: flex;
   align-items: center;
+  border-bottom: 1rpx solid #f0f0f0;
 }
 
 .schedule-container > view{

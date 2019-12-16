@@ -22,8 +22,8 @@
 
 
 <view>
-    <view class="date-tap">
-        <view wx:for="{{dates}}" wx:key="index">{{item.alias}}{{item.date}}</view>
+    <view class="date-tap h-flex">
+        <view class="'tap-item' {{index === 0? 'active-tab' : ''}}" wx:for="{{dates}}" wx:key="index">{{item.alias}}{{item.date}}</view>
     </view>
     <block wx:for="{{posters}}" wx:for-index="postIndex" wx:key="postIndex">
         <view class="schedule-container" wx:for="{{item.schedule}}" wx:key="index">
