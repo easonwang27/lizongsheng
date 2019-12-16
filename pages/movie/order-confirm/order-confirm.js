@@ -1,4 +1,4 @@
-// pages/moive/moive-detail/moive-detail.js
+// pages/movie/order-detail/order-detail.js
 Page({
 
   /**
@@ -7,7 +7,9 @@ Page({
   data: {
 
   },
-
+  goPay(){
+    wx.showToast({title: '支付成功', duration: 1500})
+  },
   /**
    * 生命周期函数--监听页面加载
    */

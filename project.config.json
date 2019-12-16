@@ -43,29 +43,29 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/moive/choice-seat/choice-seat",
-					"pathName": "pages/moive/choice-seat/choice-seat",
+					"name": "pages/movie/choice-seat/choice-seat",
+					"pathName": "pages/movie/choice-seat/choice-seat",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 1,
-					"name": "pages/moive/order-confirm/order-confirm",
-					"pathName": "pages/moive/order-confirm/order-confirm",
+					"name": "pages/movie/order-confirm/order-confirm",
+					"pathName": "pages/movie/order-confirm/order-confirm",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 2,
-					"name": "pages/moive/my-moive/my-movie",
-					"pathName": "pages/moive/my-moive/my-movie",
+					"name": "pages/movie/my-movie/my-movie",
+					"pathName": "pages/movie/my-movie/my-movie",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/moive/moive-detail/moive-detail",
-					"pathName": "pages/moive/moive-detail/moive-detail",
+					"name": "pages/movie/movie-detail/movie-detail",
+					"pathName": "pages/movie/movie-detail/movie-detail",
 					"query": "",
 					"scene": null
 				}

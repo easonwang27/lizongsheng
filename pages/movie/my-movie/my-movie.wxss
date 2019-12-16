@@ -1,4 +1,4 @@
-/* pages/moive/my-moive/my-movie.wxss */
+/* pages/movie/my-movie/my-movie.wxss */
 page{
     background-color: #f0f0f0;
 }

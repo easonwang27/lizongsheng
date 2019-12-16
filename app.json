@@ -1,16 +1,16 @@
 {
   "pages": [
-    "pages/moive/moive-list/moive-list",
-    "pages/moive/choice-seat/choice-seat",
-    "pages/moive/order-confirm/order-confirm",
-    "pages/moive/pay-success/pay-success",
-    "pages/moive/my-moive/my-movie",
-    "pages/moive/moive-detail/moive-detail"
+    "pages/movie/movie-list/movie-list",
+    "pages/movie/choice-seat/choice-seat",
+    "pages/movie/order-confirm/order-confirm",
+    "pages/movie/pay-success/pay-success",
+    "pages/movie/my-movie/my-movie",
+    "pages/movie/movie-detail/movie-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "moive",
+    "navigationBarTitleText": "movie",
     "navigationBarTextStyle": "black"
   },
   "permission": {

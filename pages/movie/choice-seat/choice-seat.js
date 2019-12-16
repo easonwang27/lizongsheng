@@ -1,4 +1,4 @@
-// pages/moive/choice-seat/choice-seat.js
+// pages/movie/choice-seat/choice-seat.js
 Page({
 
   /**
@@ -69,7 +69,7 @@ Page({
   },
   goOrderConfirm(){
     // let params = this._genQs(paramsObj)
-    let url = "/pages/moive/order-confirm/order-confirm"
+    let url = "/pages/movie/order-confirm/order-confirm"
     wx.navigateTo({
       url
     })

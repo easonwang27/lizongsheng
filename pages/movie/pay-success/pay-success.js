@@ -1,4 +1,4 @@
-// pages/moive/pay-success/pay-success.js
+// pages/movie/pay-success/pay-success.js
 Page({
 
   /**

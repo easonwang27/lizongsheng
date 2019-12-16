@@ -1,0 +1,47 @@
+<view class="cinema-address">
+    <text class="main-title">{{cinema.name}}</text>
+    <text class="font-14 sub-color">{{cinema.location}}</text>
+</view>
+<swiper class="poster-container" bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" circular autoplay>
+    <block wx:for="{{posters}}" wx:key="{{index}}">
+        <swiper-item class="item">
+            <image class="itemImg {{currentIndex == index ? 'active': ''}}" src="{{item.img}}"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="t-c">
+    <text class="main-title">{{curPoster.name}}</text>
+    <view class="main-color">
+        {{curPoster.grade}}
+        <text class="font-14">电影评分</text>
+    </view>
+</view>
+<view class="font-14 t-c sub-color">
+    {{curPoster.duration}}|{{curPoster.type}}|{{actors}}
+</view>
+
+
+<view>
+    <view class="date-tap h-flex">
+        <view class="'tap-item' {{index === 0? 'active-tab' : ''}}" wx:for="{{dates}}" wx:key="index">{{item.alias}}{{item.date}}</view>
+    </view>
+    <block wx:for="{{posters}}" wx:for-index="postIndex" wx:key="postIndex">
+        <view class="schedule-container" wx:for="{{item.schedule}}" wx:key="index">
+            <view class="v-flex">
+                <text class="main-title">{{item.beginTime}}</text>
+                <text class="font-14 sub-color">{{item.endTime}}散场</text>
+            </view>
+            <view class="v-flex v-flex-left col-2">
+                <text>{{item.type}}</text>
+                <text class="font-14 sub-color">{{item.room}}</text>
+            </view>
+            <view class="v-flex col-2 main-color">
+                <text>￥{{item.price/100}}</text>
+                <text></text>
+            </view>
+            <view class="v-flex">
+                <text class="main-btn font-14" data-index="{{postIndex}}" data-item="{{item}}" bindtap="goChoiceSeats">购票</text>
+            </view>
+        </view>
+    </block>
+</view>

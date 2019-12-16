@@ -1,4 +1,4 @@
-/* pages/moive/moive-detail/moive-detail.wxss */
+/* pages/movie/movie-detail/movie-detail.wxss */
 page{
     background-color: #f0f0f0;
 }
@@ -9,7 +9,7 @@ page{
     padding: 20rpx 30rpx;
     margin: 20rpx 30rpx;
 }
-.moive-loc{
+.movie-loc{
     color: #000000;
     padding-bottom: 20rpx;
     border-bottom: 1rpx solid #f0f0f0;
@@ -19,7 +19,7 @@ page{
     align-items: flex-start;
     padding-bottom: 30rpx;
 }
-.moive-name{
+.movie-name{
     font-size: 14px;
     color: #000000;
     margin-top: 10rpx;
