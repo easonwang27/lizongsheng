@@ -1,6 +1,0 @@
-/* pages/song-list.wxss */
-.song-list{
-    padding-left: 20rpx;
-}
-
-

@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "authUserInfo": "/pages/components/authUserInfo/userInfo",
-    "share": "/pages/components/share/share"
-  }
-}
