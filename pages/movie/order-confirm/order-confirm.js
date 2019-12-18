@@ -8,7 +8,7 @@ Page({
 
   },
   goPay(){
-    wx.showToast({title: '支付成功', duration: 1500})
+    wx.showToast({title: '支付成功', icon: 'none', duration: 1500})
   },
   /**
    * 生命周期函数--监听页面加载

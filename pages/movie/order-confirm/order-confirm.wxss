@@ -68,7 +68,8 @@ page{
     border-top: 1rpx solid #f8f8f8;
 }
 .food-img{
-    width: 300rpx;
+    width: 200rpx;
+    height: 140rpx;
     background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576166173666&di=0b05ab50c076e81c5ab2af5673acfd33&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20170915%2Fa0d0dd55663f4dd7bd49dc15b540ecae.jpeg) no-repeat;
     background-size: contain;
 }
