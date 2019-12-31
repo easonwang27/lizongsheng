@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/poem/poem/poem",
+    "pages/poem/poem-list/poem-list",
     "pages/movie/movie-list/movie-list",
     "pages/movie/choice-seat/choice-seat",
     "pages/movie/order-confirm/order-confirm",
@@ -10,7 +12,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "movie",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "permission": {
