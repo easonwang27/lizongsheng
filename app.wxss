@@ -1,4 +1,7 @@
 /**app.wxss**/
+.page-container{
+  padding: 10rpx;
+}
 .main-color{
   color: #ff4891;
 }

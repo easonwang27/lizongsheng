@@ -1,13 +1,7 @@
 {
   "pages": [
     "pages/poem/poem/poem",
-    "pages/poem/poem-list/poem-list",
-    "pages/movie/movie-list/movie-list",
-    "pages/movie/choice-seat/choice-seat",
-    "pages/movie/order-confirm/order-confirm",
-    "pages/movie/pay-success/pay-success",
-    "pages/movie/my-movie/my-movie",
-    "pages/movie/movie-detail/movie-detail"
+    "pages/poem/poem-list/poem-list"
   ],
   "window": {
     "backgroundTextStyle": "light",
