@@ -1,0 +1,1 @@
+<button wx:if="{{setpage}}" bindtap="openSetting">打开设置页</button>

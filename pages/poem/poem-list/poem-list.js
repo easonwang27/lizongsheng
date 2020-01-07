@@ -1,18 +1,20 @@
 // pages/poem/poem-list.js
+import {wxApi} from '../../../utils/util.js'
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    poemList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

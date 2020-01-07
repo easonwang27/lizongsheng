@@ -1,0 +1,2 @@
+<button wx:if="{{!subscribeMessage}}" bindtap="subscribePre">lifezdn申请订阅消息授权</button>
+<openset setpage="{{setpage}}"></openset>

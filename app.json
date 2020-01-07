@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/poem/poem/poem",
-    "pages/poem/poem-list/poem-list"
+    "pages/poem/poem-list/poem-list",
+    "pages/poem/poem/poem"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +12,10 @@
   "permission": {
     "scope.userLocation": {
       "desc": "获取您的位置，为你提供更好的使用体验"
-    }
+    },
+    "openapi": [
+      "templateMessage.send"
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

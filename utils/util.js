@@ -1,4 +1,4 @@
-const formatTime = date => {
+export const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
@@ -9,14 +9,14 @@ const formatTime = date => {
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
-const formatNumber = n => {
+export const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
 
 // zlz
-const getUrlObj = url => {
-  if(!url){
+export const getUrlObj = url => {
+  if (!url) {
     console.log("url不能为空")
     return
   }
@@ -25,7 +25,7 @@ const getUrlObj = url => {
     url: tmpArr[0],
     qs: {}
   }
-  if(tmpArr[1]){
+  if (tmpArr[1]) {
     let qsArr = tmpArr[1].split("&");
     qsArr.forEach(item => {
       let oneQsArr = item.split("=")
@@ -35,7 +35,24 @@ const getUrlObj = url => {
   return urlObj
 }
 
-module.exports = {
-  formatTime,
-  getUrlObj,
+/** 
+ * 封装微信api 包装成promise
+ * 后期便于收敛处理
+ * 
+ * 
+ */
+export const wxApi = (method, options = {}) => {
+  if (!method) {
+    console.log("method不能为空")
+    return
+  }
+  return new Promise((resolve, reject) => {
+    options.success = (res) => {
+      resolve(res)
+    }
+    options.fail = (res) => {
+      reject(res)
+    }
+    wx[method](options)
+  })
 }
