@@ -1,4 +1,4 @@
 <!--pages/poem/poem-list.wxml-->
 <!-- <subscribe wx:if="{{!app.globalData.auth.subscribeMessage}}"></subscribe>
 <text>{{app.globalData.auth.subscribeMessage}}</text> -->
-<view wx:for="{{poemList}}" wx:key="index">{{item.title}}</view>
+<view wx:for="{{poemList}}" wx:key="index" data-id="{{item.id}}" bindtap="onePoem">{{item.title}}</view>

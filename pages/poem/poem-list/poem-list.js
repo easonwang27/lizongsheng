@@ -1,6 +1,6 @@
 // pages/poem/poem-list.js
 import { wxApi } from '../../../utils/util'
-import { dbQry } from '../../../utils/service'
+import { PoemList, OnePoem } from '../../../utils/serviice/service'
 const app = getApp()
 Page({
 
@@ -11,7 +11,14 @@ Page({
     poemList: []
   },
   getPoemList() {
-    dbQry().then(res => {
+    PoemList.then(res => {
+      this.setData({
+        poemList: res
+      })
+    })
+  },
+  getOnePoem(id) {
+    OnePoem({id}).then(res => {
       this.setData({
         poemList: res
       })
