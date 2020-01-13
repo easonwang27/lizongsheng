@@ -4,7 +4,7 @@ import { wxApi } from "./utils/util"
 
 App({
   onLaunch: function () {
-    
+    wx.cloud.init()
   },
   onShow(){
     

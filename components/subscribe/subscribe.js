@@ -2,7 +2,7 @@
 import { wxApi } from '../../utils/util'
 const app = getApp()
 // 订阅消息模板ID
-const tmplIds = ['KIZc2VPceGgkGY2F9jaTgzv6GPeNtIawGsa-SHZr_D0']
+const tmplIds = ['KIZc2VPceGgkGY2F9jaTgzv6GPeNtIawGsa-SHZr_D0','lQnFPAhAAq7ZYL3LfMZd09CLhLwm1sifXOREwE-ceQU','jSllK1aj3yoQB_X0lc3OXR4jMDfXQODRB7kLR_G60MM','KIZc2VPceGgkGY2F9jaTgzv6GPeNtIawGsa-SHZr_D0']
 Component({
   /**
    * 组件的属性列表
@@ -26,8 +26,7 @@ Component({
   methods: {
     // 订阅消息授权
     subscribePre() {
-      wxApi("requestSubscribeMessage", { tmplIds: ['KIZc2VPceGgkGY2F9jaTgzv6GPeNtIawGsa-SHZr_D0'] }).then(res => {
-        debugger
+      wxApi("requestSubscribeMessage", { tmplIds }).then(res => {
         console.log('申请订阅消息授权',res)
         let setpage = tmplIds.some(id =>
           res[id] == 'reject'
@@ -63,7 +62,6 @@ Component({
       })
       wxApi('getSetting', { 'withSubscriptions': true }).then(res => {
         console.log('订阅权限相关', res)
-        debugger
         let authSetting = res.authSetting
         let subscriptionsSetting = res.subscriptionsSetting
         let subscribeMessage = authSetting['scope.subscribeMessage'] && tmplIds.every(id =>
@@ -71,7 +69,7 @@ Component({
         )
         console.log(subscribeMessage)
         this.setData({
-          subscribeMessage
+          subscribeMessage: subscribeMessage ? true : false
         })
       })
     },

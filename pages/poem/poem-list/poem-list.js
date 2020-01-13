@@ -1,5 +1,6 @@
 // pages/poem/poem-list.js
-import {wxApi} from '../../../utils/util.js'
+import { wxApi } from '../../../utils/util'
+import { dbQry } from '../../../utils/service'
 const app = getApp()
 Page({
 
@@ -9,12 +10,19 @@ Page({
   data: {
     poemList: []
   },
-
+  getPoemList() {
+    dbQry().then(res => {
+      this.setData({
+        poemList: res
+      })
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     
+    this.getPoemList()
   },
 
   /**
