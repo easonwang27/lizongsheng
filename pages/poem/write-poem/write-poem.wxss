@@ -1,0 +1,13 @@
+/* pages/poem/write-poem/write-poem.wxss */
+.cell{
+    background-color: #ffffff;
+    border-bottom: 1rpx solid #f0f0f0;
+    min-height: 80rpx;
+    line-height: 80rpx;
+    margin-bottom: 10rpx;
+}
+
+.cell .label{
+    font-weight: 400;
+    width: 4em;
+}

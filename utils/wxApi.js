@@ -3,6 +3,7 @@ import {obj2qs} from './util'
 const pages = {
     poemList: '/pages/poem/poem-list/poem-list',
     poem: '/pages/poem/poem/poem',
+    writePoem: '/pages/poem/write-poem/write-poem',
 }
 
 /**

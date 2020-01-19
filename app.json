@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/poem/poem-list/poem-list",
-    "pages/poem/poem/poem"
+    "pages/poem/poem/poem",
+    "pages/poem/write-poem/write-poem"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,1 +1,11 @@
 /* pages/poem/poem-list.wxss */
+.title{
+    margin-bottom: 6rpx;
+}
+.pen{
+    width: 80rpx;
+    height: 80rpx;
+    position: fixed;
+    right: 30rpx;
+    bottom: 60rpx;
+}

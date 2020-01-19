@@ -1,0 +1,10 @@
+<!--pages/poem/write-poem/write-poem.wxml-->
+<view class="cell h-flex-left">
+    <view class="label">题目</view>
+    <input class="input" maxlength="20" bindinput="bindKeyInput" placeholder="输入题目"/>
+</view>
+<view class="cell h-flex-left">
+    <view class="label">内容</view>
+    <textarea bindblur="bindTextAreaBlur" placeholder="输入内容" />
+</view>
+<button hover-class="button-hover">发布</button>

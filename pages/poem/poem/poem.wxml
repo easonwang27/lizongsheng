@@ -1,4 +1,2 @@
-<view class="page-container">
-    <view class="t-c">{{title}}</view>
-    <text>{{poemContent}}</text>
-</view>
+<view class="t-c">{{title}}</view>
+<text>{{poemContent}}</text>

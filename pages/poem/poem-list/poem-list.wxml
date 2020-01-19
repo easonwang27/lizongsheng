@@ -1,6 +1,7 @@
 <!--pages/poem/poem-list.wxml-->
 <!-- <subscribe wx:if="{{!app.globalData.auth.subscribeMessage}}"></subscribe>
 <text>{{app.globalData.auth.subscribeMessage}}</text> -->
-<view wx:for="{{poemList}}" wx:key="index" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="goOnePoem">{{item.title}}</view>
+<view class="title" wx:for="{{poemList}}" wx:key="index" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="goOnePoem">{{item.title}}</view>
 <view wx:if="{{poemList.length === 0}}" class="t-c">没有数据</view>
 <view wx:if="{{allFlag}}" class="t-c">已经到底了</view>
+<image bindtap="goNewPoem" class="pen" src="cloud://prd-xp.7072-prd-xp-1301074416/笔.png"></image>

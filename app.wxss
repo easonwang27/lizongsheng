@@ -1,63 +1,76 @@
 /**app.wxss**/
-.page-container{
+page {
   padding: 10rpx;
+  background-color: #F8F8F8;
 }
-.main-color{
+.main-color {
   color: #ff4891;
 }
-.sub-color{
+.sub-color {
   color: #999999;
 }
-.main-bg-color{
+.main-bg-color {
   background-color: #ff4891;
 }
-.main-btn{
+.main-btn {
   color: #ffffff;
   background-color: #ff4891;
   padding: 6rpx 10rpx;
   border-radius: 10rpx;
   text-align: center;
 }
-.t-c{
+.t-c {
   text-align: center;
 }
-.t-r{
+.t-r {
   text-align: right;
 }
-.h-flex{
+.h-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.v-flex{
+.v-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.v-flex-left{
+.h-flex-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.v-flex-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.col-2{
+.col-2 {
   flex-grow: 1;
 }
-.font-14{
+.font-14 {
   font-size: 14px;
 }
-.font-12{
+.font-12 {
   font-size: 12px;
 }
-.padding-big{
+.padding-big {
   padding: 30rpx;
 }
 /* 点击效果样式 */
-.hover-active{
+.button-hover {
   background-color: #ccc;
 }
-.close-icon{
+.close-icon {
   transform: rotate(45deg);
+}
+
+textarea {
+  width: 700rpx;
+  height: 300rpx;
+  padding: 25rpx 0;
 }

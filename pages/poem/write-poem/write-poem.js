@@ -1,36 +1,22 @@
-// pages/poem/poem-list.js
-import { navTo, wxApi } from '../../../utils/wxApi'
-import { PoemList } from '../../../utils/serviice/service'
-const app = getApp()
+// pages/poem/write-poem/write-poem.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    poemList: [],
-
-    allFlag: false,
+    inputValue: ""
   },
-  getPoemList() {
-    PoemList().then(res => {
-      this.setData({
-        poemList: res
-      })
+  bindKeyInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
     })
-  },
-  goOnePoem(e){
-    let {id, title} = e.currentTarget.dataset
-    navTo('poem', {id, title})
-  },
-  goNewPoem(){
-    navTo('writePoem')
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getPoemList()
+
   },
 
   /**

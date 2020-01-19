@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "诗列",
   "usingComponents": {
     "subscribe": "../../../components/subscribe/subscribe"
   }

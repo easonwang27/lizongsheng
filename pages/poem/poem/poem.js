@@ -1,5 +1,6 @@
 // pages/poem/poem/poem.js
 import { OnePoem } from '../../../utils/serviice/service'
+import { wxApi } from '../../../utils/wxApi'
 Page({
 
   /**
@@ -10,8 +11,8 @@ Page({
     poemContent: {},
   },
   getOnePoem(id) {
-    OnePoem({id}).then(res => {
-      
+    OnePoem({ id }).then(res => {
+
       this.setData({
         poemContent: res[0].content
       })
@@ -21,8 +22,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let {id, title} = options
-    
+    let { id, title } = options
+    wxApi('setNavigationBarTitle', {
+      title
+    })
     this.setData({
       title
     })
