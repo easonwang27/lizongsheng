@@ -1,5 +1,5 @@
 import { wxApi } from "./utils/util"
-
+require('./utils/mixin/mixin.js')
 //app.js
 
 App({

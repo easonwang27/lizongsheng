@@ -35,24 +35,12 @@ export const getUrlObj = url => {
   return urlObj
 }
 
-/** 
- * 封装微信api 包装成promise
- * 后期便于收敛处理
- * 
- * 
- */
-export const wxApi = (method, options = {}) => {
-  if (!method) {
-    console.log("method不能为空")
-    return
+export const obj2qs = params => {
+  let result = "?"
+  for (let key in params) {
+    result += key + "=" + params[key]+'&'
   }
-  return new Promise((resolve, reject) => {
-    options.success = (res) => {
-      resolve(res)
-    }
-    options.fail = (res) => {
-      reject(res)
-    }
-    wx[method](options)
-  })
+  
+  console.log(result.substr(0, result.length-1))
+  return result.substr(0, result.length-1)
 }

@@ -1,6 +1,6 @@
 // pages/poem/poem-list.js
-import { wxApi } from '../../../utils/util'
-import { PoemList, OnePoem } from '../../../utils/serviice/service'
+import { navTo, wxApi } from '../../../utils/wxApi'
+import { PoemList } from '../../../utils/serviice/service'
 const app = getApp()
 Page({
 
@@ -8,27 +8,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    poemList: []
+    poemList: [],
+
+    allFlag: false,
   },
   getPoemList() {
-    PoemList.then(res => {
+    PoemList().then(res => {
       this.setData({
         poemList: res
       })
     })
   },
-  getOnePoem(id) {
-    OnePoem({id}).then(res => {
-      this.setData({
-        poemList: res
-      })
-    })
+  goOnePoem(e){
+    let {id, title} = e.currentTarget.dataset
+    navTo('poem', {id, title})
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
     this.getPoemList()
   },
 

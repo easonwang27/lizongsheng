@@ -1,18 +1,32 @@
 // pages/poem/poem/poem.js
+import { OnePoem } from '../../../utils/serviice/service'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    poemTitle: "",
+    poemContent: {},
   },
-
+  getOnePoem(id) {
+    OnePoem({id}).then(res => {
+      
+      this.setData({
+        poemContent: res[0].content
+      })
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let {id, title} = options
+    
+    this.setData({
+      title
+    })
+    this.getOnePoem(id)
   },
 
   /**
